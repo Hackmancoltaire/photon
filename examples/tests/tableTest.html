@@ -1,0 +1,617 @@
+<head>
+<style type='text/css'>
+.defaultText { font-family: Lucida Grande,Geneva,Arial; font-size: 10px; }
+
+.defaultTextBold { font-family: Lucida Grande,Geneva,Arial; font-size: 10px; font-weight: bold; }
+
+.defaultErrorText {	font-family: Geneva; font-size: 12px; font-weight: bold; color: #FF0000 }
+
+.defaultSuccessText { font-family: Geneva; font-size: 12px; font-weight: bold; color: #00FF00 }
+
+.defaultHeader { font-family: Verdana, Arial; font-size: 18px; }
+
+.tinytext { font-family: Lucida Grande;	font-size: 10px; color: #999999; }
+
+.moduleHeader {	font-family: Verdana, Arial; font-size: 14px; color: #000000; }
+
+.categoryHeader { font-family: Verdana, Arial; font-size: 16px; color: #000000; }
+
+.tabHeader { font-family: Lucida Grande, Arial, Helvetica; font-size: 11px;	color: #000000;	text-decoration: none; }
+
+.tabHeader-PANTHER { font-family: Lucida Grande, Arial, Helvetica; font-size: 12px;	color: #000000;	text-decoration: none; }
+.tabHeaderDisabled-PANTHER { font-family: Lucida Grande, Arial, Helvetica; font-size: 12px;	color: #808080;	text-decoration: none; }
+
+.tabHeader-small-PANTHER { font-family: Lucida Grande, Arial, Helvetica; font-size: 11px; color: #000000; text-decoration: none; }
+.tabHeaderDisabled-small-PANTHER { font-family: Lucida Grande, Arial, Helvetica; font-size: 11px; color: #808080; text-decoration: none; }
+
+.tabHeader-mini-PANTHER { font-family: Lucida Grande, Arial, Helvetica;	font-size: 9px;	color: #000000;	text-decoration: none; }
+.tabHeaderDisabled-mini-PANTHER { font-family: Lucida Grande, Arial, Helvetica;	font-size: 9px;	color: #808080;	text-decoration: none; }
+
+.tableHeader { font-family: Lucida Grande, Arial, Helvetica; font-size: 11px; color: #000000; line-height; 11px; text-decoration: none; }
+
+.moduleName { font-family:Verdana; font-size:12px; font-weight:bold; }
+
+.moduleText { font-family:Verdana; font-size:10px; }
+
+.controlName { font-family:Verdana;	font-size:10px;	font-weight:bold; }
+
+.controlText { font-family:Verdana;	font-size:10px; }
+
+pre { font-family: Geneva; font-size: 10px; }
+
+.formTitle { font-family:Verdana; font-size:10px; font-weight:bold; color: #666666; }
+
+.lighterHeader { font-family: Verdana, Arial; font-size: 14px; color: #666666; }
+
+.specDetailCategory { font-family: Lucida Grande,Verdana; font-size: 10px; margin: 5px;}
+
+.adDescriptor { font-family: Verdana; font-size: 10px; font-weight: bold; color: rgb(50%,50%,50%); }
+
+.greyBox { border: 1px solid #6D6D6D; background: #FAFAFA; padding: 5px; margin: 5px; }
+.greyBoxB { border: 1px solid rgb(70%,70%,70%); background: #FAFAFA; padding: 5px; margin: 5px; }
+
+.mainNavBox
+{
+	border-style: solid;
+	border-color: rgb(70%,70%,70%);
+	border-width: 0px 1px 1px 1px;
+	width: 680px;
+	text-align: left;
+	background-image: url(/hotads2k5/common/images/whiteBarWithTitle.gif);
+	background-repeat: no-repeat;
+}
+
+.navigationBar {
+	padding-top: 3px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 7px;
+	width: auto;
+	text-align: left;
+	border-bottom: rgb(70%,70%,70%);
+	border-top: rgb(70%,70%,70%);
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+}
+
+.footerFillBox {
+	background-color: rgb(91%,91%,91%);
+	width: 680px;
+	text-align: left;
+	border-right: rgb(70%,70%,70%);
+	border-bottom: rgb(70%,70%,70%);
+	border-left: rgb(70%,70%,70%);
+	border-width: 0px 1px 1px 1px;
+	border-style: solid;
+}
+
+.paddingBox { padding: 10px; }
+
+.whiteBox { border: 1px solid #6D6D6D; background: white; padding: 5px; margin: 5px; }
+.whiteBoxB { border: 1px solid rgb(70%,70%,70%); background: white; padding: 5px; margin-bottom: 5px; }
+
+.errorBar { background: url(http://lord-canti.local/mercury/PHOTON/images/gradient-red.gif) top left repeat-x; font-size: 10px; line-height: 13px; color: #FFFFFF; vertical-align: middle; text-shadow: rgba(0,0,0,.4) 0px 1px 1px; }
+.errorBox {
+	font-size: 10px;
+	line-height: 13px;
+	color: #FFFFFF;
+	vertical-align: middle;
+	text-shadow: rgba(0,0,0,.4) 0px 1px 1px;
+	background-image: url(http://lord-canti.local/mercury/PHOTON/images/gradient-red.gif);
+	background-repeat: repeat-x;
+	background-position: left;
+	border: 1px solid #6D6D6D;
+	padding: 10px;
+}
+
+.searchHeader { background: url(http://lord-canti.local/mercury/PHOTON/images/phSearchTable/searchHeader_fill.gif) top left repeat-x; font-family: "Lucida Grande"; font-weight: bold; font-size: 12px; line-height: 19px; color: #FFFFFF; vertical-align: middle; text-shadow: rgba(0,0,0,.4) 0px 1px 1px; }
+
+.phClearer { clear: both; display: block; margin: 0; padding: 0; height: 0; line-height: 1px; font-size: 1px; }
+
+/* phBreadcrumbs */
+
+.phBreadcrumbs#container {
+	float: left;
+	height: 20px;
+	width: auto;
+	margin: 7px 0 0 7px;
+}
+
+.phBreadcrumbs {
+	float: left;
+	height: 20px;
+	font-family: Lucida Grande;
+	font-size: 11px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 20px;
+}
+
+.phBreadcrumbs#home { background-image: none; }
+
+.phBreadcrumbs a {
+	text-decoration: none;
+	color: black;
+	background-image: URL(http://lord-canti.local/mercury/PHOTON/images/phBreadcrumbs/crumbFill.png);
+}
+
+.phBreadcrumbs#seperator {
+	width: 20px;
+	background-Image: URL(http://lord-canti.local/mercury/PHOTON/images/phBreadcrumbs/crumbSeperator.png);
+}
+
+.phBreadcrumbs#end {
+	width: 12px;
+	background-Image: URL(http://lord-canti.local/mercury/PHOTON/images/phBreadcrumbs/crumbEndCap.png);
+}
+</style>
+	<style type='text/css'>
+.photonTable {
+	width: 100%;
+	background-color: white;
+	
+	border-left: 1px solid #C3C3C3;
+	border-right: 1px solid #C3C3C3;
+	border-bottom: 1px solid #c3c3c3;
+	
+	font-family: "Lucida Grande",Arial,Helvetica;
+	font-size: 11px;
+	vertical-align: middle;
+}
+
+.photonTable tr#header { }
+
+.photonTable tr#header td#selected {
+	background: #c3c3c3 URL(http://lord-canti.local/mercury/PHOTON/images/phAquaTable/fill_selected.gif) repeat-x;
+	cursor: pointer;
+}
+
+.photonTable tr#header td#unselected {
+	background: white URL(http://lord-canti.local/mercury/PHOTON/images/phAquaTable/fill_unselected.gif) repeat-x;
+	cursor: pointer;
+}
+
+.photonTable tr#header td div#column {
+	margin: 0px 8px 0px 8px;
+	line-height: 17px;
+	float: left;
+}
+
+.photonTable tr#row { }
+
+.photonTable tr#row td {
+	padding: 3px 8px 3px 8px;
+	line-height: 17px;
+	text-align: left;
+}
+
+.photonTable tr#row td#button {
+	padding: inherit;
+}
+
+.photonTable #columnSpacer_selected {
+	width: 1px;
+	height: 17px;
+	background: URL(http://lord-canti.local/mercury/PHOTON/images/phAquaTable/border_selected.gif) no-repeat;
+	float: right;
+}
+
+.photonTable #columnSpacer_unselected {
+	width: 1px;
+	height: 17px;
+	background: URL(http://lord-canti.local/mercury/PHOTON/images/phAquaTable/border_unselected.gif) no-repeat;
+	float: right;
+}
+
+.photonTable #sort_ascending {
+	width: 9px;
+	height: 17px;
+	background: URL(http://lord-canti.local/mercury/PHOTON/images/phAquaTable/ascending.gif) no-repeat;
+	float: right;
+	margin-right: 3px;
+}
+
+.photonTable #sort_descending {
+	width: 9px;
+	height: 17px;
+	background: URL(http://lord-canti.local/mercury/PHOTON/images/phAquaTable/descending.gif) no-repeat;
+	float: right;
+	margin-right: 3px;
+}
+
+.photonTable #columnSpacer_end {
+	width: 1px;
+	height: 17px;
+	float: right;
+}</style>
+	<style type='text/css'>
+body {margin: 0; padding: 0; background: #fff; text-align: center; font: 12px 'Lucida Grande', Geneva, Arial, Verdana, sans-serif; color: #000;}
+
+
+#header {width: 680px; margin: 10px auto; text-align: center;}
+
+#main, #breadcrumb, #footer {width: 680px; margin: 15px auto; text-align: left;}
+#main p {margin: 0 0 1em 0;}
+#main p.last {margin: 0;}
+#main p.intro {font-weight: bold;}
+#main .lite {color: #79767c;}
+#main h1 {font-size: 24px; margin: 0 0 .1em 0;}
+#main h2 {font-size: 16px; margin: 0;}
+#main h3 {font-size: 12px; margin: 0;}
+#main h4 {font-size: 10px; margin: 0;}
+#main .more {text-align: right;}
+
+#main a.pdf {background: url(http://images.apple.com/main/elements/globaliconpdf12x12.gif) left top no-repeat; display: block; padding-left: 20px;}
+#main a.html {background: url(http://images.apple.com/main/elements/globaliconhtml12x1220050802.gif) left top no-repeat; display: block; padding-left: 20px;}
+#main a.qt {background: url(http://images.apple.com/main/elements/globaliconqt12x12.gif) left top no-repeat; display: block; padding-left: 20px;}
+#main a.ical {background: url(http://images.apple.com/main/elements/globaliconical12x12.gif) left top no-repeat; display: block; padding-left: 20px;}
+#main a.dl {background: url(http://images.apple.com/main/elements/globalicondl11x10.gif) left top no-repeat; display: block; padding-left: 20px;}
+#main a.dmg {background: url(http://images.apple.com/main/elements/globalicondmg12x12.gif) left top no-repeat; display: block; padding-left: 20px;}
+#main a.zip {background: url(http://images.apple.com/main/elements/globaliconzip12x12.gif) left top no-repeat; display: block; padding-left: 20px;}
+#main a.keynote {background: url(http://images.apple.com/main/elements/globaliconkeynote12x12.gif) left top no-repeat; display: block; padding-left: 20px;}
+#main a.audio {background: url(http://images.apple.com/main/elements/globaliconaudio12x12.gif) left top no-repeat; display: block; padding-left: 20px;}
+
+#main .subcolumn1-2 {float: left; width: 330px;}
+#main .subcolumn2-2 {float: right; width: 330px;}
+#main .subcolumn1-3, #main .subcolumn2-3, #main .subcolumn3-3 {width: 212px; float: left;}
+#main .subcolumn1-3, #main .subcolumn2-3 {margin-right: 20px;}
+
+#content .subcolumn1-2 {float: left; width: 215px;}
+#content .subcolumn2-2 {float: right; width: 215px;}
+#content .subcolumn1-3, #content .subcolumn2-3, #content .subcolumn3-3 {width: 135px; float: left;}
+#content .subcolumn1-3, #content .subcolumn2-3 {margin-right: 22px;}
+
+#sidebar {float: right; width: 200px; font: 10px 'Lucida Grande', Geneva, Verdana, Arial, sans-serif;}
+#sidebar h2 {font-size: 12px; margin: 0;}
+#sidebar h3 {font-size: 11px; margin: 0;}
+#sidebar h4 {font-size: 10px; margin: 0;}
+
+select#findastore {width: 200px;}
+
+#main .box {border: 1px solid #a1a5a9; padding: 0 5px 5px 5px; margin: 0 0 1.25em 0;}
+#content .box h2 {border-bottom: 1px solid #a1a5a9; padding: 5px; background: #f2f2f2; margin: 0 -5px 5px -5px; font-size: 12px;}
+#sidebar .box h2 {border-bottom: 1px solid #a1a5a9; padding: 5px; background: #f2f2f2; margin: 0 -5px 5px -5px; font-size: 11px;}
+
+img.left {float: left; margin: 2px 10px 5px 0; border: 0;}
+img.right {float: right; margin: 2px 0 5px 10px; border: 0;}
+img.across {margin: 0 0 10px 0; border: 0;}
+
+.showmac {display: none;}
+.showwin {}
+
+ul {list-style: none outside; margin: 0; padding: 0 0 1em 0;}
+ul.square {list-style: square outside; margin: 0 0 0 16px; padding: 0 0 1em 0;}
+ul.circle {list-style: circle outside; margin: 0 0 0 16px; padding: 0 0 1em 0;}
+ol {list-style: decimal; margin: 0 0 0 2.8em; padding: 0 0 1em 0;}
+li {padding-bottom: .3em;}
+ul ul.circle {margin-top: .3em;}
+ul ul.square {margin-top: .3em;}
+
+ol.last {padding: 0;}
+ul.last {padding: 0;}
+dl.last {padding: 0;}
+li.last {padding: 0;}
+
+sup {vertical-align: baseline; font-size: 1em; color: #76797c;}
+
+.sosumi {font-size: 10px !important; color: #76797c;}
+ol.sosumi {margin-left: 0; padding-left: 1.5em; clear: both;}
+
+#breadcrumb, #footer {text-align: center; clear: both;}
+#breadcrumb {clear: both; font-size: 10px; padding: 1em 0;}
+
+#footer {font: 10px 'Lucida Grande', Geneva, Verdana, Arial, sans-serif; border-top: 1px solid #a1a5a9; padding-top: 1em;}
+
+</style>
+	<style type='text/css'>
+
+body#bodyipodhifi { background: #1d1d1d url("http://lord-canti.local/mercury/myImages/bodybgnd20060228.jpg") repeat-x top; }
+
+#bodyipodhifi ol, body#bodynano ol, body#bodyipod ol, #bodyipodhifi ul body#bodynano ul, body#bodyipod ul {line-height: 150%;}
+
+/* global nav */
+.globalnav { width: 90%; min-width: 740px; height: 53px; margin: 20px auto 0; background-image: url("http://lord-canti.local/mercury/myImages/upperFill.gif"); }
+
+#bodyipodhifi #header { width: 90%; min-width: 740px; padding: 0; background-color: #3b3c3d; border-width: 0 1px; margin: 0 auto;}
+
+#bodyipodhifi #main { width: 90%; min-width: 740px; background: #fff; border-width: 0 1px; margin: 0 auto;}
+
+#bodyipodhifi .padder {padding: 30px;}
+#bodyipodhifi p {margin-bottom: 15px;}
+#bodyipodhifi p.last {margin-bottom: 0;}
+#bodyipodhifi img.left {margin: 4px 25px 10px 0;}
+#bodyipodhifi img.right {margin: 4px 0 10px 25px;}
+#bodyipodhifi #main #sidebar .box h3 {margin: 8px 0 .3em;}
+#bodyipodhifi #main .box p {margin: 7px 0 3px; line-height: 160%;}
+#bodyipodhifi #main #sidebar .box ul {margin-top: 8px;}
+#bodyipodhifi #breadcrumb {width: 738px; padding: 0; border: 0; margin: 0;}
+
+#bodyipodhifi #bottom { width: 90%; min-width: 740px; margin: 0 auto; }
+
+#bodyipodhifi #footer {border: 0; color: #fff;}
+#bodyipodhifi #footer a {color: #fff;}
+#bodyipodhifi #footer .sosumi {color: #fff;}
+
+/* local nav */
+/*
+#localnav { border: 1px solid #3b3c3d; background: red; table-layout: fixed; width: 100%; min-width: 740px; padding: 0; margin: 0 auto; }
+#localnav td { font-size: 11px; text-align: center; vertical-align: middle; white-space: nowrap; padding: 0; }
+#localnav a:hover { color: #85d9f8; }
+#localnav a.hi { color: #85d9f8; background: #494B4D url(http://images.apple.com/ipodnano/images/localnavon.gif) repeat-x top left; }
+*/
+
+.localnav { color: #A1A5A9; background: #2c2c2c url("http://lord-canti.local/mercury/myImages/localnavbg.gif") repeat-x top left; padding: 2px; border: 1px solid #3b3c3d; }
+
+
+/* misc */
+#buynow h3, #buynow p {margin-left: 66px;}
+#buynow img {clear: left;}
+#sidebar h3.indent, #sidebar p.indent {margin-left: 66px;}
+#reseller .address {width: 150px; margin-right: 10px;}
+#configurations .across {margin-bottom: 5px;}
+#callouts {margin: 10px 0 20px;}
+.paddingfix {padding-top: 5px;}
+
+.topNavText { font-family: Lucida Grande; font-size: 11px; color: white; text-decoration: none; }
+.topNavText a { color: white; text-decoration: none; }
+.topNavText a:hover { text-decoration: underline; }</style>
+</head>
+
+
+<br><br>
+<center>
+
+
+<table border="0" cellspacing="0" cellpadding="0" class="photonTable">
+	<tr id="header">
+		<td id="selected">
+			<div id='columnSpacer_selected'></div>
+			<div id='sort_ascending'></div>
+			<div id="column">Name</div>
+		</td>
+		<td id="unselected">
+			<div id='columnSpacer_unselected'></div>
+			<div id="column">Address</div>
+		</td>
+		<td id="unselected">
+			<div id='columnSpacer_unselected'></div>
+			<div id="column">Email</div>
+		</td>
+		<td id="unselected">
+			<div id="column">Another</div>
+		</td>
+	</tr>
+	<tr id="row">
+		<td>This</td>
+		<td>That</td>
+		<td>that@other</td>
+		<td></td>
+	</tr>
+	<tr><td colspan='4' bgcolor='#C3C3C3'><img src='PHOTON/images/spacer.gif' width='100' height='1'></td></tr>
+	<tr id='rowAlt'>
+		<td>This</td>
+		<td>That</td>
+		<td>that@other</td>
+		<td></td>
+	</tr>
+</table>
+
+<br>
+<table border='0' cellspacing='0' cellpadding='0' class='photonTable'>
+	<tr id='header'>
+		<td id='selected' onClick='window.location.href="/mercury/searchTest.php?projectTable_selectedColumn=0&projectTable_sortOrder=DESC"'>
+			<nobr>
+				<div id='columnSpacer_selected'>
+				</div>
+				<div id='sort_ascending'>
+				</div>
+				<div id='column'>
+					Project Name
+				</div>
+			</nobr>
+		</td>
+		<td id='unselected' onClick='window.location.href="/mercury/searchTest.php?projectTable_selectedColumn=1&projectTable_sortOrder=ASC"'>
+			<nobr>
+				<div id='columnSpacer_unselected'>
+				</div>
+				<div id='column'>
+					Status
+				</div>
+			</nobr>
+		</td>
+		<td id='unselected' width='150' onClick='window.location.href="/mercury/searchTest.php?projectTable_selectedColumn=2&projectTable_sortOrder=ASC"'>
+			<nobr>
+				<div id='columnSpacer_unselected'>
+				</div>
+				<div id='column'>
+					Last Updated
+				</div>
+			</nobr>
+		</td>
+		<td id='unselected' onClick='window.location.href="/mercury/searchTest.php?projectTable_selectedColumn=3&projectTable_sortOrder=ASC"'>
+			<nobr>
+				<div id='columnSpacer_unselected'>
+				</div>
+				<div id='column'>
+					Modifier
+				</div>
+			</nobr>
+		</td>
+		<td id='unselected' width='20'>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #FFFFFF'>
+		<td>
+			<a href='projectView.php?projectID=3' class='defaultText' border='0'>Another test project.</a>
+		</td>
+		<td>
+			3
+		</td>
+		<td>
+			1066265605
+		</td>
+		<td>
+		</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATDelete(3)'><img src='http://lord-canti.local/mercury/PHOTON/images/minus.gif' border='0'></a>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #ECF2FF'>
+		<td>
+			<a href='projectView.php?projectID=39' class='defaultText' border='0'>Chazy</a>
+		</td>
+		<td>
+			3
+		</td>
+		<td>
+			1060189652
+		</td>
+		<td>
+		</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATDelete(39)'><img src='http://lord-canti.local/mercury/PHOTON/images/minus.gif' border='0'></a>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #FFFFFF'>
+		<td>
+			<a href='projectView.php?projectID=5' class='defaultText' border='0'>Forth Project</a>
+		</td>
+		<td>
+			3
+		</td>
+		<td>
+			1051130734
+		</td>
+		<td>
+		</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATDelete(5)'><img src='http://lord-canti.local/mercury/PHOTON/images/minus.gif' border='0'></a>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #ECF2FF'>
+		<td>
+			<a href='projectView.php?projectID=50' class='defaultText' border='0'>Long Beach</a>
+		</td>
+		<td>
+			3
+		</td>
+		<td>
+			1071085199
+		</td>
+		<td>
+		</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATDelete(50)'><img src='http://lord-canti.local/mercury/PHOTON/images/minus.gif' border='0'></a>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #FFFFFF'>
+		<td>
+			<a href='projectView.php?projectID=59' class='defaultText' border='0'>My 2K4 Project</a>
+		</td>
+		<td>
+			3
+		</td>
+		<td>
+			1083629843
+		</td>
+		<td>
+		</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATDelete(59)'><img src='http://lord-canti.local/mercury/PHOTON/images/minus.gif' border='0'></a>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #ECF2FF'>
+		<td>
+			<a href='projectView.php?projectID=10' class='defaultText' border='0'>One Bug to Rule them all!</a>
+		</td>
+		<td>
+			3
+		</td>
+		<td>
+			1082408403
+		</td>
+		<td>
+		</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATDelete(10)'><img src='http://lord-canti.local/mercury/PHOTON/images/minus.gif' border='0'></a>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #FFFFFF'>
+		<td>
+			<a href='projectView.php?projectID=24' class='defaultText' border='0'>Portland Community College</a>
+		</td>
+		<td>
+			3
+		</td>
+		<td>
+			1054140043
+		</td>
+		<td>
+		</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATDelete(24)'><img src='http://lord-canti.local/mercury/PHOTON/images/minus.gif' border='0'></a>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #ECF2FF'>
+		<td>
+			<a href='projectView.php?projectID=16' class='defaultText' border='0'>Ramons Project</a>
+		</td>
+		<td>
+			3
+		</td>
+		<td>
+			1051057407
+		</td>
+		<td>
+		</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATDelete(16)'><img src='http://lord-canti.local/mercury/PHOTON/images/minus.gif' border='0'></a>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #FFFFFF'>
+		<td>
+			<a href='projectView.php?projectID=1' class='defaultText' border='0'>Test Project</a>
+		</td>
+		<td>
+			3
+		</td>
+		<td>
+			1056148010
+		</td>
+		<td>
+		</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATDelete(1)'><img src='http://lord-canti.local/mercury/PHOTON/images/minus.gif' border='0'></a>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #ECF2FF'>
+		<td>
+			<a href='projectView.php?projectID=4' class='defaultText' border='0'>Yet a third Project</a>
+		</td>
+		<td>
+			3
+		</td>
+		<td>
+			1047418620
+		</td>
+		<td>
+		</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATDelete(4)'><img src='http://lord-canti.local/mercury/PHOTON/images/minus.gif' border='0'></a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan='5' bgcolor='#C3C3C3'>
+			<img src='PHOTON/images/spacer.gif' width='100' height='1'>
+		</td>
+	</tr>
+	<tr id='row' style='background-color: #FFFFFF'>
+		<td colspan="4">Click the plus to add a project</td>
+		<td align='center' id="button">
+			<a href='javascript:projectTable_ATAdd()'><img src='http://lord-canti.local/mercury/PHOTON/images/plus.gif' border='0'></a>
+		</td>
+	</tr>
+</table>
+
+
+</center>

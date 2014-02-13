@@ -1,0 +1,196 @@
+<!-- Start Tabs -->
+<style type="text/css">
+
+	.tabHeader { font-family: Lucida Grande, Arial, Helvetica; font-size: 11px;	color: #000000;	text-decoration: none; }
+	
+	.tabHeader-PANTHER { font-family: Lucida Grande, Arial, Helvetica; font-size: 12px;	color: #000000;	text-decoration: none; }
+	.tabHeaderDisabled-PANTHER {  }
+	
+	.tabHeader-small-PANTHER { font-family: Lucida Grande, Arial, Helvetica; font-size: 11px; color: #000000; text-decoration: none; }
+	.tabHeaderDisabled-small-PANTHER { font-family: Lucida Grande, Arial, Helvetica; font-size: 11px; color: #808080; text-decoration: none; }
+	
+	.tabHeader-mini-PANTHER { font-family: Lucida Grande, Arial, Helvetica;	font-size: 9px;	color: #000000;	text-decoration: none; }
+	.tabHeaderDisabled-mini-PANTHER { font-family: Lucida Grande, Arial, Helvetica;	font-size: 9px;	color: #808080;	text-decoration: none; }
+	
+	.photonTabs {
+		width: 100%;
+		font-family: "Lucida Grande",Arial,Helvetica;
+		border: 1px solid red;
+	}
+	
+	.photonTabs #tabGroup {
+		padding: 0px; 5px 0px 5px;
+		display: table-row;
+	}
+	
+	.photonTabs #tab {
+		display: table-cell;
+	}
+	
+	.photonTabs a#tab_selected {
+		padding: 4px 10px 4px 10px;
+		line-height: 24px;
+		background: #c3c3c3 URL(PHOTON/images/tabs-PANTHER/fill_regular_selected.gif) repeat-x;
+
+		font-size: 12px;
+		color: black;
+
+		text-align: middle;
+		vertical-align: middle;
+		text-decoration: none;
+		display: inline;
+	}
+
+	.photonTabs a#tab_unselected {
+		padding: 4px 10px 4px 10px;
+		line-height: 24px;
+		background: #c3c3c3 URL(PHOTON/images/tabs-PANTHER/fill_regular_unselected.gif) repeat-x;
+
+		font-size: 12px;
+		color: black;
+
+		text-align: middle;
+		vertical-align: middle;
+		text-decoration: none;
+		display: inline;
+	}
+
+	.photonTabs a#tab_disabled {
+		padding: 4px 10px 4px 10px;
+		line-height: 16px;
+		
+		font-size: 12px;
+		color: #808080;
+
+		text-align: middle;
+		vertical-align: middle;
+		text-decoration: none;	
+		display: block;
+	}
+
+	.photonTabs #seperator_selected {
+		width: 1px;
+		background: URL(PHOTON/images/tabs-PANTHER/seperator_regular_selected.gif) no-repeat;
+		display: table-cell;
+	}
+
+	.photonTabs #seperator_unselected {
+		width: 1px;
+		background: URL(PHOTON/images/tabs-PANTHER/seperator_regular_unselected.gif) no-repeat;
+		display: table-cell;
+	}
+	
+	.photonTabs #seperator_disabled {
+		width: 1px;
+		background: URL(PHOTON/images/tabs-PANTHER/seperator_regular_selected.gif) no-repeat;
+		float: right;	
+		display: table-cell;
+	}
+
+	.photonTabs #leftCap_selected {
+		width: 8px;
+		background: URL(PHOTON/images/tabs-PANTHER/leftCap_regular_selected.gif) no-repeat;
+		float: left;		
+		display: inline;
+	}
+
+	.photonTabs #leftCap_unselected {
+		width: 8px;
+		height: 24px;
+		background: URL(PHOTON/images/tabs-PANTHER/leftCap_regular_unselected.gif) no-repeat;
+		float: left;
+		display: inline;
+	}
+
+	.photonTabs #leftCap_disabled {
+		width: 8px;
+		height: 24px;
+		background: URL(PHOTON/images/tabs-PANTHER/leftCap_regular_disabled.gif) no-repeat;
+		float: left;	
+	}
+
+	.photonTabs #rightCap_selected {
+		width: 8px;
+		height: 24px;
+		background: URL(PHOTON/images/tabs-PANTHER/rightCap_regular_selected.gif) no-repeat;
+		background-position: center right;
+		float: right;
+		margin-left: 4px;
+	}
+
+	.photonTabs #rightCap_unselected {
+		width: 8px;
+		height: 24px;
+		background: URL(PHOTON/images/tabs-PANTHER/rightCap_regular_unselected.gif) no-repeat;
+		background-position: center right;
+		float: right;	
+		display: inline;
+	}
+	
+	.photonTabs #rightCap_disabled {
+	
+	}
+
+	.photonTabs #content {
+		padding: 10px 5px 5px 5px;
+		font-size: 11px;
+		background: #EFEFEF;
+	}
+
+</style>
+
+
+<table border='0' cellpadding='0' cellspacing='0' class="photonTabs">
+	<tr>
+		<td width='11'><img src='PHOTON/images/tabs-PANTHER/boxUL.gif' width='11' height='24'></td>
+		<td background='PHOTON/images/tabs-PANTHER/boxTop.gif' align='center' valign='top'>
+			<div id="tabGroup">
+				<div id="tab">
+					<div id="leftCap_unselected"></div>
+					<div id="seperator_selected"></div>
+					<a href='/mercury/test.php?Test_activeTab=0' id='tab_unselected' onclick='this.blur()'>Name</a>
+				</div>
+				<div id="tab">
+					<div id="seperator_selected"></div>
+					<a href='/mercury/test.php?Test_activeTab=0' id='tab_selected' onclick='this.blur()'>Address</a>
+				</div>
+				<div id="tab">
+					<div id="rightCap_unselected"></div>
+					<a href='/mercury/test.php?Test_activeTab=0' id='tab_unselected' onclick='this.blur()'>Email</a>
+				</div>
+			</div>
+		</td>
+		<td width='11'><img src='PHOTON/images/tabs-PANTHER/boxUR.gif' width='11' height='24'></td>
+	</tr>
+	<tr>
+		<td background='PHOTON/images/tabs-PANTHER/boxL.gif'><img src='PHOTON/images/spacer.gif' width='11' height='11'></td>
+		<td id="content">
+			This is a test This is a test This is a test This is a test This is a test This is a test This is a test This is a test 
+			This is a test This is a test This is a test This is a test This is a test This is a test This is a test This is a test 
+		</td>
+		<td background='PHOTON/images/tabs-PANTHER/boxR.gif'><img src='PHOTON/images/spacer.gif' width='11' height='11'></td>
+	</tr>
+	<tr>
+		<td width='11'><img src='PHOTON/images/tabs-PANTHER/boxBL.gif' width='11' height='11'></td>
+		<td background='PHOTON/images/tabs-PANTHER/boxBottom.gif'><img src='PHOTON/images/spacer.gif' width='11' height='11'></td>
+		<td width='11'><img src='PHOTON/images/tabs-PANTHER/boxBR.gif' width='11' height='11'></td>
+	</tr>
+</table>
+
+<div class="photonTabs">
+	<div id="tabGroup">
+		<div id="tab">
+			<div id="leftCap_unselected"></div>
+			<a href='/mercury/test.php?Test_activeTab=0' id='tab_unselected' onclick='this.blur()'>Name</a>
+		</div>
+		<div id="seperator_selected"></div>
+		<div id="tab">
+			<a href='/mercury/test.php?Test_activeTab=0' id='tab_selected' onclick='this.blur()'>Address</a>
+		</div>
+		<div id="seperator_selected"></div>
+		<div id="tab">
+			<div id="rightCap_unselected"></div>
+			<a href='/mercury/test.php?Test_activeTab=0' id='tab_unselected' onclick='this.blur()'>Email</a>
+		</div>
+	</div>
+</div>
